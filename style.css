@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.nav a {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #5015b5;
+  color: white;
+}
+
+input[type="file"] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #555;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #641ae6;
+  padding: 10px 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  font-size: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #5015b5;
+}
